@@ -26,6 +26,9 @@ body.offcanvas-menu:before {
   z-index: 1002;
   visibility: visible; 
 }
+.pointer{
+  cursor: pointer;
+}
 .globe img{
   width: 80%;
   visibility: hidden;
