@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Website Menu #5</title>
+    <style>
+      
+.tabs {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden; }
+  .tabs [class^="tab"] label,
+  .tabs [class*=" tab"] label {
+    color: #efedef;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center; }
+  .tabs [class^="tab"] [type="radio"],
+  .tabs [class*=" tab"] [type="radio"] {
+    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+    .tabs [class*=" tab"] [type="radio"]:hover,
+    .tabs [class*=" tab"] [type="radio"]:focus {
+      border-bottom: 1px solid #f08c07; }
+    .tabs [class^="tab"] [type="radio"]:checked,
+    .tabs [class*=" tab"] [type="radio"]:checked {
+      border-bottom: 4px solid #f08c07; }
+    .tabs [class^="tab"] [type="radio"]:checked + div,
+    .tabs [class*=" tab"] [type="radio"]:checked + div {
+      opacity: 1; }
+    .tabs [class^="tab"] [type="radio"] + div,
+    .tabs [class*=" tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 2rem 0;
+      width: 90%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  .tabs .tab-2 {
+    width: 33%; }
+    .tabs .tab-2 [type="radio"] + div {
+      width: 300%;
+      margin-left: 200%; }
+    .tabs .tab-2 [type="radio"]:checked + div {
+      margin-left: 0; }
+    .tabs .tab-2:last-child [type="radio"] + div {
+      margin-left: 100%; }
+      .tabs .tab-2:nth-child(2) [type="radio"]:checked + div {
+      margin-left: -100%; }
+    .tabs .tab-2:last-child [type="radio"]:checked + div {
+      margin-left: -200%; }
+
+    .tabs .tab-3 {
+    width: 50%; }
+    .tabs .tab-3 [type="radio"] + div {
+      width: 200%;
+      margin-left: 200%; }
+    .tabs .tab-3 [type="radio"]:checked + div {
+      margin-left: 0; }
+    .tabs .tab-3:last-child [type="radio"] + div {
+      margin-left: 100%; }
+    .tabs .tab-3:last-child [type="radio"]:checked + div {
+      margin-left: -100%; }
+    
+
+
+      #detailsInformation {display: none;}  
+      #detailsInformation {
+        font-size: 15px; color: #d4d4d4;
+      }
+      #detailsInformation a {
+        color: #d4d4d4;
+        text-decoration: underline !important;
+      }
+      .detailsInformation-title {
+        font-size: 17px; border-bottom: 2px solid #40bbc5; padding-bottom: 5px; margin-bottom: 15px;
+      }
+
+
+      .ctiStudent {
+margin-top: 50px;
+}
+
+.studentRow {
+display: grid;
+grid-template-columns: 2fr 8fr;
+font-weight: bold;
+}
+
+.studentPhoto img{
+width: 100%;
+}
+
+.studentBio {
+padding-left: 12px;
+box-sizing: border-box;
+}
+
+#viewMore {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .studentRow {
+grid-template-columns: 100%;
+}
+.studentBio {
+padding-left: 0;
+}
+}
+    </style>
+  </head>
+  <body>
+    <div class="background-img" id="background-img" ></div>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="position: relative;">
+        <div class="d-block d-sm-none" 
+        style="position: absolute; width: 70%; height: 100%;  z-index: 1;"></div>
+        <div class="col-2 col-sm-4 col-md-3"></div>
+        <div class="banner-height" style="height: 100vh; z-index: -1;">
+
+        </div>
+        <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+          Scroll down <br>
+          <i class="fas fa-angle-down chevron"></i>
+        </span>
+      </div>
+    </div>
+    
+    <header class="site-navbar site-navbar-target py-4" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center position-relative">
+
+          <div class="col-9 col-sm-5 col-md-4">
+            <div class="site-logo">
+              <a href="index.html" class="font-weight-bold text-white">
+                <img src="./images/main-logo.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3 col-sm-7 col-md-8 text-right align-self-start">
+            
+
+            <span class="d-inline-block d-lg-block"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
+
+            
+
+            <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">CCSi Africa</a></li>
+                <li><a href="#" class="nav-link">Training</a></li>
+                <li><a href="#" class="nav-link">Best Practices Guide</a></li>
+                <li><a href="#" class="nav-link">Gender Violence</a></li>
+                <li><a href="#" class="nav-link">Cyber Security</a></li>
+                <li><a href="#" class="nav-link">Maritime Security</a></li>
+                <li><a href="#" class="nav-link">News and Views</a></li>
+                <li><a href="#" class="nav-link">Research</a></li>
+                <li><a href="#" class="nav-link">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          
+        </div>
+      </div>
+
+    </header>
+
+    <div class="about-us" data-aos="fade-up" data-aos-duration="4000">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              <h1 class="section-title py-sm-3">
+                WHO WE ARE
+              </h1>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="description mb-5 p-2 p-md-5" data-aos="fade-right" data-aos-duration="4000">
+              <p>
+                We are expert practitioners supporting governments, the international community, and businesses, in achieving these objectives: 
+              </p>
+              <ul>
+                <li>
+                  <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                  Protecting national, international and human security
+                </li>
+                <li>
+                  <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                  Enhancing the non-proliferation of conventional arms and weapons of mass destruction
+                </li>
+                <li>
+                  <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                  Strengthening border and sea/air-port security
+                </li>
+                <li>
+                  <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                  Building financial sector and cyber space integrity
+                </li>
+                <li>
+                  <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                  Preventing  human  and  gender rights abuses
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us mt-md-5">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-md-8">
+            <div class="title">
+              <h1 class="section-title">
+                WHAT WE DO
+              </h1>
+            </div>
+            <div class="description mb-5 p-2 p-md-5" data-aos="fade-right" data-aos-duration="4000">
+              <p>
+                We research specific security challenges and how states, the international community and corporations address these risks.
+                <br>
+                We develop curricula, guidance, tools, manuals and handbooks to enhance the implementation, compliance and due diligence skills of public and private sector professionals. 
+                <br>
+                We convene international stakeholders to develop and enhance best practices for the application of strategic trade controls, sanctions and human rights.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us mt-md-5" >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mb-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="title">
+                    <h1 class="section-title text-center">
+                      OUR TEAM
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="description pt-2 pb-5 px-1 p-sm-5" data-aos="zoom-in" data-aos-duration="4000">
+
+                <div class="tabs">
+                  <div class="tab-2">
+                    <label for="tab2-1">Director</label>
+                    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                    <div id="directors">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-3">
+                                  <div class="profile toggleInformation">
+                                    <a><img src="./images/Loraine Rickard-Martin (aqr).jpg" alt=""></a>
+                                  </div>
+                                </div>
+                                <div class="col-9 remove-left-padding">
+                                  <a class="toggleInformation">
+                                    <div class="name">
+                                      <h4>
+                                        Loraine Rickard-Martin
+                                      </h4>
+                                    </div>
+                                    <div class="position">
+                                      <p>
+                                        Board Chair and CEO
+                                      </p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="details mt-3" id="detailsInformation">
+                                    <h6 class="detailsInformation-title">Board Chair and Chief Executive Officer</h6>
+                                    <div class="detailsInformation-des">
+                                      <p>
+                                        Loraine Rickard-Martin delivers the evolving CCSI curriculum to enhance international sanctions practices and implementation skills to diplomatic and government officials, through co-managing sanctions reform processes such as the High Level Review of UN Sanctions (2015) and the follow-on Assessment of the HLR (2017) and co-implementing the Best Practices Guide for Chairs and Members of UN Sanctions Committees (2018 and 2020). Prior to co-founding CCSI in 2011, she served the United Nations for over three decades, including 15 years as senior political affairs officer and sanctions committee secretary in the Security Council Affairs Division of the Department of Political Affairs, New York, advising sanctions committee chairs and members, supporting teams of sanctions monitors, and participating in reform processes to refine the sanctions tool. She was secretary of the UN Secretary-General’s High-Level Panel on Threats, Challenges and Change (2003-2004). She advised the African Union’s Peace and Security Council on sanctions issues with the drafting of an AU sanctions manual (2012). She lectured on United Nations sanctions at Columbia University’s School of International and Public Affairs and taught an intensive ten-week course for diplomats at Columbia University (2010-2013).  She is the co-author with Enrico Carisch and Shawna Meister of “The Evolution of UN Sanctions: From a Tool of Warfare to a Tool of Peace, Security and Human Rights (2017), and  has co-authored other articles and publications on international sanctions. 
+                                      </p>
+
+                                      <p style="margin-top: 50px;"><b>Publications</b></p>
+                                      <div style="font-style: italic; font-size:14px;">
+                                      <p>Rickard-Martin, Loraine, “United Nations Sanctions – Through a Gender Lens”. In “Multilateral Sanctions Dissected: Lessons Learned from Margaret Doxey”, Andrea Charron and Clara Portela, eds., (McGill Queens UP),  forthcoming.</p>
+
+                                      <p><a href=" https://www.ips-journal.eu/regions/europe/can-the-eu-create-a-powerful-sanctions-regime-4136/" target="_blank">Rickard-Martin, Loraine, and Nowe, Jedrzej, “Can the EU create a powerful sanctions regime?”, (2020, IPS Journal). </a></p>
+
+                                      <p>Carisch, Enrico, Rickard-Martin, Loraine, Meister, Shawna <a href="https://link.springer.com/book/10.1007/978-3-319-60005-5" target="_blank">The Evolution of UN Sanctions: Form a Tool of Warfare to a Tool of Peace, Security and Human Rights; </a>Springer; November 2017</p>
+
+                                      <p><a href="https://www.cambridge.org/core/books/targeted-sanctions/92A66A1D175A4D72F94350363330216C" target="_blank">Carisch, Enrico, and Rickard-Martin, Loraine, “Implementation of United Nations Targeted Sanctions”. In “Targeted Sanctions: The Impacts and Effectiveness of United Nations Action”, Thomas Biersteker, Sue E. Eckert and Marcos Tourinho, eds. (2016, Cambridge UP). </a></p>
+
+                                      <p>Carisch, Enrico and Rickard-Martin, Loraine; <a href="https://www.amazon.com/s/ref%3Dnb_sb_noss?url=search-alias%3Daps&field-keywords=united%2Bnations%2Bnon%2Bproliferation%2Bsanctions%2Bon%2Biran%2Band%2Bnorth%2Bkorea">United Nations Non-Proliferation Regimes on Iran and DPRK Regime; </a>CCSI Publishing (ISBN-13: 978-0996926331); November 2015.</p>
+
+                                      <p>Carisch, Enrico and Rickard-Martin, Loraine; <a href="http://library.fes.de/pdf-files/iez/global/09578.pdf">Sanctions and the Effort to Globalize Natural Resources Governance; </a>Friedrich Ebert Foundation, New York – USA; 2013</p>
+
+                                      <p>Carisch, Enrico and Rickard-Martin, Loraine; <a href="#">Global Threats and the Role of United Nations Sanctions;</a> Friedrich Ebert Foundation, New York – USA; 2011</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-3">
+                                  <div class="profile">
+                                    <a class="toggleInformation"><img src="./images/RC.jpg" alt=""></a>
+                                  </div>
+                                </div>
+                                <div class="col-9 remove-left-padding">
+                                  <a class="toggleInformation">
+                                    <div class="name">
+                                      <h4>
+                                        Enrico Carisch
+                                      </h4>
+                                    </div>
+                                    <div class="position">
+                                      <p>
+                                        Director and Managing Director
+                                      </p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="details mt-3" id="detailsInformation">
+                                    <h6 class="detailsInformation-title">
+                                      Member of the Board of Directors, Secretary and Treasurer
+                                    </h6>
+                                    <div class="detailsInformation-des">
+                                      <p>Enrico Carisch co-implemented on behalf of Australia, Belgium, Canada, Germany, the Netherlands and Sweden the development of the Best Practices Guide for Chairs and Members of UN Sanctions Committees (2020) that followed the High Level Review of UN sanctions, and the Assessment of Achievements, Challenges, and Opportunities resulting from the Recommendations of the HLR Compendium. He has co-developed UN system-wide sanctions training programs sponsored by Canada and other states and international organizations. He co-authored “The Evolution of UN Sanctions: From a Tool of Warfare to a Tool of Peace, Security and Human Rights. </p>
+                                      <p>Carisch served the United Nations Security Council as a financial and natural resources sanctions monitor prior to co-founding CCSI. He continues to lead and conduct research and capacity-building projects in conflict-affected regions, and frequently authors and co-authors implementation manuals for non-proliferation sanctions, sanctions implementation studies, books and articles. He currently leads sanctions implementation trainings for governments and industries around the world.</p>
+                                      
+                                      <p style="color: #a8a8a8; margin-top:50px;"><b>Selected publications</b></p>
+                                      <div style="font-style: italic; font-size:14px;">
+                                      <p>Carisch Enrico; <a href="https://www.amlo.moj.gov.tw/media/15253/dprk-un-sanctions-implementation-handbook_%E4%B8%AD%E6%96%87%E7%89%88.pdf?mediaDL=true">聯合國對北韓制裁實施手冊 </a> - 2019 年 3 月</p>
+                                      <p>Carisch Enrico, <a href="https://ccsi.global/wp-content/uploads/2019/10/Swahil-report-FINAL.pdf">Mwongozo wa Utekelezaji wa Vikwazo vya Umoja wa Mataifa vilivyowekewa Korea Kaskazini </a> - Machi 2019</p>
+                                      <p>Carisch, Enrico; <a href="https://ccsi.global/wp-content/uploads/2019/10/Manual-de-Implementatc%CC%A7a%CC%83o-para-sanc%CC%A7o%CC%84es-da-ONU-na-Coreia-do-Norte.pdf">Manual de implementação para sanções da ONU na Coreia do Norte </a> - Março de 2019</p>
+                                      <p>Carisch, Enrico; <a href="#"> Manuel d’application des sanctions des Nations Unies contre la Corée du Nord </a> – Les défis qui confrontent les États Africains francophones; January 2019;</p>
+                                      <p>Carisch, Enrico; <a href="https://ccsi.global/wp-content/uploads/2019/03/DPRK-HANDBOOK-Amharic-FINAL.pdf" target="_blank"> በሰሜን ኮሪያ ላይ የተጣሉ የተባበሩት መንግስታት ማዕቀቦች ትግበራ መመሪያ መጽሐፍ - የአፍሪካ አገሮችን የሚገጥሙ ተግዳሮቶች </a>  - መስከረም 2018</p>
+                                      <p>Carisch, Enrico, <a href="#" > Implementation Handbook for UN Sanctions on North Korea </a> – The Challenges faced by African States, November 2018 (Amharic, English and Swahili)</p>
+                                      <p>Carisch, Enrico, Rickard-Martin, Loraine, Meister Shawna; <a href="https://link.springer.com/book/10.1007/978-3-319-60005-5" target="_blank">The Evolution of UN Sanctions: Form a Tool of Warfare to a Tool of Peace, Security and Human Rights; </a> Springer; November 2017</p>
+                                      <p>Carisch, Enrico and Rickard-Martin, Loraine; <a href="https://www.amazon.com/s?k=united%2Bnations%2Bnon%2Bproliferation%2Bsanctions%2Bon%2Biran%2Band%2Bnorth%2Bkorea&ref=nb_sb_noss" target="_blank"> United Nations Non-Proliferation Regimes on Iran and DPRK Regime; </a> CCSI Publishing (ISBN-13: 978-0996926331); November 2015.</p>
+                                      <p>Carisch, Enrico; <a href="#" > Congo’s Golden Web - The people, companies and countries that profit from the illegal trade in Congolese gold; 
+                                       </a> Southern African Resource Watch, Johannesburg – South Africa; November 2014.
+                                      Carisch, Enrico and Rickard-Martin, Loraine; United Nations Sanctions on Iran and North Korea: An Implementation Manual; International Peace Institute, New York – USA; March 2014
+                                      </p>
+                                      <p>Carisch Enrico;;= <a href="#"> The High Cost of Congolese Gold – Poverty, Abuse and the Collapse of Family and Community Structures; </a> Southern African Resource Watch, Johannesburg – South Africa; 2013</p>
+                                      <p>Carisch, Enrico and Rickard-Martin, Loraine; <a href="http://library.fes.de/pdf-files/iez/global/09578.pdf"> Sanctions and the Effort to Globalize Natural Resources Governance;</a> Friedrich Ebert Foundation, New York – USA; 2013</p>
+                                      <p>Carisch, Enrico; <a href="#">Conflict Gold to Criminal Gold – The New Face of Artisanal Gold Mining in Congo; </a> Southern African Resource Watch; Johannesburg – South Africa; 2012</p>
+                                      <p><Carisch, Enrico and Rickard-Martin, Loraine; a href="" target="_blank"> Global Threats and the Role of United Nations Sanctions;</a>  Friedrich Ebert Foundation, New York – USA; 2011</p>
+                                      <p>Carisch, Enrico; Institutional Responses to 9/11 in Terrornomics edited by David Gold, and Sean S Costigan, Ashgate Publishing Limited, London - UK (ISBN-13: 978-0754649953); 2007</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-3">
+                                  <div class="profile">
+                                    <a class="toggleInformation"><img src="./images/Thomas (sqr).jpg" alt=""></a>
+                                  </div>
+                                </div>
+                                <div class="col-9 remove-left-padding">
+                                  <a class="toggleInformation">
+                                    <div class="name">
+                                      <h4>
+                                        Thomas Bifwoli
+                                      </h4>
+                                    </div>
+                                    <div class="position">
+                                      <p>
+                                        Director and CEO of CCSI Africa
+                                      </p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="details mt-3" id="detailsInformation">
+                                    <div class="detailsInformation-des">
+                                      <p>Thomas W. Bifwoli is Chief Executive Officer of CCSI Africa. A senior customs and border management expert who has served the Kenya Revenue Authority, as coordinator of UN sanctions monitoring groups, and as chief of the World Customs Organization's Regional Intelligence Liaison Office for Eastern and Southern Africa (WCO - RILO ESA),  Mr. Bifwoli is a seasoned trainer and mentor to law enforcement and border control organizations. As an experienced practitioner, his teaching and training are based on practical and effective customs control and management practices. He has also consulted for the IMF and the WCO, led training and field operations in, among others, Ethiopia, Ghana, Kenya, Namibia, Nigeria, and Tanzania, on behalf of the international funding agencies of the African Development Bank, Canada, the UK and the US . Mr. Bifwoli holds a Master's degree in public policy from the Strathmore Business School (Kenya) and a Bachelor's in Education and Mathematics from Kenyatta University (Kenya). In his spare time, he practices the duathlon, having qualified to represent his country in the world multisport championships.</p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-3">
+                                  <div class="profile">
+                                    <a class="toggleInformation"><img src="./images/Fereshteh-black and white (sqr).jpg" alt=""></a>
+                                  </div>
+                                </div>
+                                <div class="col-9 remove-left-padding">
+                                  <a class="toggleInformation">
+                                    <div class="name">
+                                      <h4>
+                                        Fereshteh Forough
+                                      </h4>
+                                    </div>
+                                    <div class="position">
+                                      <p>
+                                        Independent Director
+                                      </p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="details mt-3" id="detailsInformation">
+                                    <div class="detailsInformation-des">
+                                      <p>Fereshteh Forough was born a refugee in Iran after her family fled Afghanistan because of the Soviet invasion. Despite the family’s circumstances, her parents instilled in her and her siblings the value of education from an early age. Her mother sewed clothing to sell in order to earn money to buy school supplies for the children. When she was a teen, the Taliban regime collapsed and she and her family moved back to Herat, Afghanistan. After returning to Herat, she earned her Bachelor’s in Computer Science. She later earned her Master’s from Technical University of Berlin in Germany. She returned to Herat University to join the Computer Science faculty, where she taught for almost three years. In 2015, she established Code to Inspire, the first computer coding school for girls in Afghanistan. Leading all aspects of operations and fundraising remotely, CTI educated more than 250 students so far in coding and graphic design classes. Ms. Forough remains focused on a vision of a future for her homeland where young women play a prominent role in the economy and future success.</p>
+
+                                      <p style="color: #a8a8a8; margin-top:50px;"><a href="https://www.codetoinspire.org/" target="_blank"><b><span style="color: #000000;">Code</span> <span style="color: #9a9a9a;"><</span><span style="color: #000000;">to</span><span style="color: #9a9a9a;">></span> <span style="color: #923590;">Inspire</span></b></a></p>
+                                      <div style="font-style: italic;">
+                                      <p>Code to Inspire (CTI) is the first computer coding school for girls in Afghanistan founded in January 2015 by former refugee and computer science professor Fereshteh Forough. CTI empowers women in Afghanistan to drive economic and social progress by teaching them how to code, helping them find jobs, create startup ventures, build digital careers and achieve economic independence.</p>
+                                      <p>Code to Inspire addresses poverty, cultural and patriarchal barriers, freedom of movement and economic challenges that women in Afghanistan face by providing a free one year after school program in a safe environment for women aged 18-25. By teaching them coding and other complementary skills, such as graphic design, they begin a path towards financial independence and help narrow the economic and educational gender gap in Afghanistan.  </p>
+                                      </div>
+                                      
+                                      
+                                      <div class="ctiStudent">
+                                      
+                                      <p><b>Success stories from our graduates: </b></p>
+                                      </br>
+                                      <div class="studentRow">
+                                      <div class="studentPhoto">
+                                      <img class="scale-with-grid" src="./images/parima.jpg" alt="Parima Faqiri Photo" />
+                                      </div>
+                                      <div class="studentBio">
+                                      <p style="font-size:16px; font-weight:bold;">Parima Faqiri</p>
+                                      <p style="color: #a8a8a8;">iOS and Android Mobile App Developer ( Class 2018-2020 )</p>
+                                      </div>
+                                      </div>
+                                      
+                                      <div class="studentMoreInfo">
+                                      <p>There was something I could never imagine – getting a job from my technical skills. Lack of opportunities for women in my city and Afghanistan is a big pushback for women to join the tech sector. </p>
+                                      <p>When I enrolled at CTI to become a mobile application developer, I was excited to be in a safe place where I can express myself without being criticized and always encouraged. </p>
+                                      <p>I was able to develop a mobile app for the Afghanistan Traffic department. Many people downloaded the app and provided insightful feedback and also encouraged me to make more apps.</p>
+                                      <p>After I grated from CTI, with their support I got introduced to a startup in the US to help them with their upcoming mobile project. It is my first paid job and I am so proud of myself to be on the path of financial independence and supporting my family. </br>
+                                      CTI is my home and I am so grateful for their support.
+                                      </p>
+                                      </div>
+                                      
+                                      <div style="font-style: italic; font-size:14px;">
+                                      <p><a href="https://www.youtube.com/watch?v=uhMyAIerj0g&t=11s" target="_blank">A documentary video of Parima</a></p>
+                                      </div>
+                                      
+                                      </div>
+                                      
+                                      
+                                      <div class="ctiStudent">
+                                      
+                                      <div class="studentRow">
+                                      <div class="studentPhoto">
+                                      <img class="scale-with-grid" src="./images/farahnaz.jpg" alt="Farahnaz Osmani Photo" />
+                                      </div>
+                                      <div class="studentBio">
+                                      <p style="font-size:16px; font-weight:bold;">Farahnaz Osmani</p>
+                                      <p style="color: #a8a8a8;">Graphic Design Department ( Class 2017-2019 )</p>
+                                      </div>
+                                      </div>
+                                      
+                                      <div class="studentMoreInfo">
+                                      <p>Farahnaz Osmani is one of our top graduates from Graphic Design class. Her dedication, creativity and hard work inspired us to hire her as Code to Inspire graphic design mentor and set an example to the other students to be a role model.</p>
+                                      <p>Farahnaz says: “Since I was a child I had a deep interest in art and creativity. 
+                                      When I just enrolled in the university, I learned about CTI and its graphic design class.
+                                      During my studies at CTI I found it as an ideal place for any female student who wants to grow without hesitation and fear.
+                                      </p>
+                                      <p>CTI provided any resources in their capacity to improve our skills. When I asked for a digital pen to do a digital art project, without hesitation school management provided me one. I managed to deliver several paid outsourcing projects for the first time in my life for clients in the US, Europe and Afghanistan.</p>
+                                      </div>
+                                      
+                                      <div style="font-style: italic; font-size:14px;">
+                                      <p><a href="https://www.youtube.com/watch?v=ljrZe_Eq9DE" target="_blank">A video of Farahnaz teaching in class</a></p>
+                                      </div>
+                                      
+                                      </div>
+                                      
+                                      
+                                      <div class="ctiStudent">
+                                      
+                                      <div class="studentRow">
+                                      <div class="studentPhoto">
+                                      <img class="scale-with-grid" src="./images/arezo.jpg" alt="Arezo Akrami Photo" width="100%">
+                                      </div>
+                                      <div class="studentBio">
+                                      <p style="font-size:16px; font-weight:bold;">Arezo Akrami</p>
+                                      <p style="color: #a8a8a8;">Web Designer (Class 2015-2017)</p>
+                                      </div>
+                                      </div>
+                                      
+                                      <div class="studentMoreInfo">
+                                      <p>Arezo Akrami knew very little about computers when she learned about Code to Inspire. The daughter of merchants and one of five children living in Afghanistan, the high school student enrolled in CTI’s Web Development/Web Design class and fell in love with programming and CTI’s safe and welcoming environment. Two years later, she graduated from the CTI program and launched a freelance web development business. The early days were tough, but Arzo landed a project to create a website for a nonprofit organization in Herat. The organization loved her work and hired her as an employee to provide web development services. </p>
+                                      <p>“The first ever salary I received through my coding skills was an unforgettable feeling. I was jumping around and wanted to fly,” Arzo said. “I am so happy that I can make money by myself and I am so grateful to CTI for helping to make this happen.”</p>
+                                      </div>
+                                      
+                                      <div style="font-style: italic; font-size:14px;">
+                                      <p>Website she developed:</p>
+                                      <p><a href="http://mahtabsaffron.af/" target="_blank">Mahtab Saffron Company</a><br>
+                                      <a href="http://rapo-af.org/" target="_blank">RESCUE THE AFGHANISTAN PEOPLE ORGANIZATION (RAPO)</a></p>
+                                      <br><br>
+                                      <p>Links to articles:</p>
+                                      <p><a href="https://www.inverse.com/innovation/57115-fereshteh-forough-code-to-inspire" target="_blank">Inverse</a><br>
+                                      <a href="https://www.documentjournal.com/2018/05/computer-science-heavyweights-fereshteh-forough-and-barbara-liskov-find-beauty-in-code/" target="_blank">Document Journal</a><br>
+                                      <a href="https://blog.coinbase.com/fereshteh-forough-interview-1e73a684788f?gi=98ff22be667f" target="_blank">Coinbase</a></p>
+                                      </div>
+                                      
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-3">
+                                  <div class="profile">
+                                    <a class="toggleInformation"><img src="./images/Gary Lutin1.png" alt=""></a>
+                                  </div>
+                                </div>
+                                <div class="col-9 remove-left-padding">
+                                  <a class="toggleInformation">
+                                    <div class="name">
+                                      <h4>
+                                        Gary Lutin
+                                      </h4>
+                                    </div>
+                                    <div class="position">
+                                      <p>
+                                        CCSI Board of Directors
+                                      </p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="details mt-3" id="detailsInformation">
+                                    <div class="detailsInformation-des">
+                                      <p>Mr. Lutin serves as Chairman of The Shareholder Forum, which supports investor interests in the responsible corporate management of capital to produce goods and services. Prior to initiating the Forum programs in 1999, with the CFA Society of New York (then called the New York Society of Security Analysts), he had been the lead investor in acquisitions of companies with the management oversight of J. Keith Louden, a prominent business leader and advocate of responsible corporate management during the decades of global industrial development following World War II. Mr. Lutin had founded what became the leading U.S. investment bank for growing industrial companies when he was 28 years old, after working at Manufacturers Hanover Trust, Weeden & Company, the Committee for Economic Development, and Salomon Bros. & Hutzler.</p>                                     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-3">
+                                  <div class="profile">
+                                    <a class="toggleInformation"><img src="./images/Sandra-Lyngdorf.jpg" alt=""></a>
+                                  </div>
+                                </div>
+                                <div class="col-9 remove-left-padding">
+                                  <a class="toggleInformation">
+                                    <div class="name">
+                                      <h4>
+                                        Sandra Lyngdorf
+                                      </h4>
+                                    </div>
+                                    <div class="position">
+                                      <p>
+                                        Sanctions Coordinator
+                                      </p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="details mt-3" id="detailsInformation">
+                                    <div class="detailsInformation-des">
+                                      <p>Ms.Sandra Lyngdorf was the Sanctions Coordinator on Sweden’s Security Council team in New York. She was in charge of Sweden‘s chairmanship of the Libya and Mali Sanctions Committees as well as Sweden‘s engagement in the ISIL (Da’esh) and Al-Qaida and the Taliban Sanctions Committees, the technical sanctions aspects of the 1718 (DPRK) Committee and horizontal sanctions matters in all the other sanctions committees. She assisted Committee Members and non-Council Members in navigating the procedures of the committees, particularly in terms of listings, de-listings, exemptions and exceptions to arms embargoes, export bans on natural resources, travel bans, asset freezes etc. She was also involved in negotiating mandate renewals related to sanctions and counter-terrorism.</p>
+                                      
+                                      <p>Ms. Lyngdorf previously served at the Swedish Mission as Legal Advisor and Election Officer during Sweden’s Security Council campaign. Prior to joining the Swedish Mission, she worked as a Legal Officer in the UN Office of Legal Affairs (Codification Division), as a research associate on the DOMAC project (Impact of International Courts on Domestic Criminal Procedures in Mass Atrocity Cases) and as a human rights specialist at the Icelandic Human Rights Centre.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div id="viewMore">
+                      <div class="row">
+                        <div class="col-sm-6">
+                        <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="profile toggleInformation">
+                                  <a><img src="./images/CJ-Passos-web.jpg" alt=""></a>
+                                </div>
+                              </div>
+                              <div class="col-9 remove-left-padding">
+                                <a class="toggleInformation">
+                                  <div class="name">
+                                    <h4>
+                                      Professor Nikos Passas
+                                    </h4>
+                                  </div>
+                                  <div class="position">
+                                    <p>
+                                      CCSI Board of Directors
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="details mt-3" id="detailsInformation">
+                                  <div class="detailsInformation-des">
+                                    <p>Nikos Passas is Professor of Criminology and Criminal Justice at Northeastern University, Visiting Professor at the Basel Institute on Governance, Visiting Professor at Vienna University of Applied Sciences for Management & Communications Center for Corporate Governance & Business Ethics; Distinguished Visiting Professor at Beijing Normal University; Professor, Distinguished Practitioner in Financial Integrity and Senior Fellow of the Financial Integrity Institute at Case Western Reserve Law School and Chair of the Academic Council of the Anti-Corruption Academy in India. He serves on the Advisory Board of the Global Risk Profile in Geneva. He served as Team Leader for a European Union Commission project on financial vigilance and effective implementation of sanctions against proliferation and WMD finance. For 14 years, he served as editor-in-chief of the international journal Crime, Law and Social Change and is associate editor for a number of journals. He has published more than 220 articles, book chapters, reports and books in 14 languages. His current work focuses on Corruption, Human Rights, Trade-Based Financial Crime and Illicit Flows.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="profile toggleInformation">
+                                  <a><img src="./images/Hans-Jakob-Schindler.jpg" alt=""></a>
+                                </div>
+                              </div>
+                              <div class="col-9 remove-left-padding">
+                                <a class="toggleInformation">
+                                  <div class="name">
+                                    <h4>
+                                      Dr. Hans-Jakob Schindler
+                                    </h4>
+                                  </div>
+                                  <div class="position">
+                                    <p>
+                                      CCSI Board of Directors
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="details mt-3" id="detailsInformation">
+                                  <div class="detailsInformation-des">
+                                    <p>Dr. Schindler is the Senior Director of the Counter Extremism Project, co-chair of the Advisory Board of the Global Diplomatic Forum (GDF) in London and teaching fellow at the Academy for Security in the Economy (ASW Akademie AG) in Essen, Germany. Between 2013 and 2018 he served as the Coordinator and Expert of the ISIL (Da’esh)/ Al -Qaida/Taliban Sanctions Monitoring Team as mandated by the United Nations Security Council. From 2011 and 2013 he worked as Program Director of the Institute for Strategic Dialogue (ISD) in London (UK) and as Associate Partner for Political Risk at West Sands, London (UK). Prior to these engagements, Mr. Schindler served as First Secretary for Political Affairs and Liaison Officer to the Security Forces at the Germany Embassy in Tehran (Iran) between 2005 and 2011 and held other positions with the Federal Government of Germany related to conflict analysis and counter-terrorism since 2001. He has extensive experience in crisis management and in advisory roles to senior government and corporations, specifically on enhancing security policies, practices and implementation strategies for the UN and the German government. Having studied in Tübingen (Germany), Georgetown (Washington, D.C.), Tel Aviv (Israel) and St Andrews (UK), he holds a Master’s and a PhD Degree from St Andrews University focused on international terrorism.</p>
+                                    
+                                    <p>Modernisierung der Terrorismusfinanzierung. Herausforderungen für die Industrie, in: Christian Vogt, Patrick Hennies, Christian Endreß, Patrick Peters (eds): Wirtschaftsschutz in der Praxis. Herausforderungen an die Sicherheit im Zeitalter von Digitalisierung und Krise, VS Verlag 2021 (forthcoming) </p>
+                                    
+                                    <p>Terrorismusfinanzierung, in: Joachim Krause, Liane Rothenberger, Jannis Jost, Kira Frankenthal (eds): Interdisziplinäre Terrorismusforschung – Handbuch für Wissenschaft und Praxis, Nomos, 2021 (forthcoming)</p>
+                                    <p>Challenging Interfaces in Monitoring and Enforcing UN Counter-Terrorism Sanctions, in: Sasha Lohmann, Judith Vorrath(eds): International Sanctions. Improving Implementation through Better Interface Management. Stiftung Wissenschaft und Politk (SWP), Working Paper2021 (forthcoming)</p>
+                                    <br>
+                                    <div style="font-style: italic; font-size:14px;">
+                                    <p>Misuse of online services for the financing of terrorism, Counter IED Report, Spring/Summer 2021 (forthcoming)</p>
+                                    <p><a href=" https://www.counterextremism.com/sites/default/files/2021-05/CEP%20Policy%20Paper%20II%20EU%20DSA_May%202021.pdf">Alexander Ritzmann, Dr. Hans-Jakob Schindler, Lucinda Creighton, EU Commission consultation: Digital Services Act package – ex ante regulatory instrument of very large online platforms acting as gatekeepers, CEP Policy Paper, May 2021</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/2021-05/CEP%20Policy%20Paper%20II%20EU%20DSA_May%202021.pdf"></a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/2021-05/CEP%20Briefing%20Paper_vXRW%20Event%20Series%202021.pdf">Dr. Hans-Jakob Schindler, Alexander Ritzmann, Marco Macori, Virtual Event Series 2021: Violent Right-Wing Extremism and Terrorism, CEP Briefing Paper, May 2021</a></p>
+                                    <p><a href="https://www.gdforum.org/global-agenda-3" target="_blank">Pandemic of Extremism, in: Global Diplomatic Forum (ed), The Global Agenda, Vol. 2, 2021-2023, May 2021</a></p>
+                                    <p><a href="https://www.inss.org.il/wp-content/uploads/2021/02/IranMonograph_e-29-39.pdf">An Assessment of the Efforts to Mitigate the Impact of US Secondary Sanctions: The EU Blocking Statue and INSTEX, in: Shima Shine, Iran and the International Arena: Challenges and Opportunities, The Institute for National Security Studies (INSS), Tel Aviv 2021</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/CEP%20Virtual%20Side%20Event%2007.12.2020%20AFTER%20ACTION%20REPORT%20FINAL.pdf">After Action Report. Virtual Side Event: The Financing of Right-wing and Ethnically or Racially Motivated Terrorism, CEP Policy Paper December 2020</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/CEP%20Study_Violent%20Right-Wing%20Extremism%20and%20Terrorism_Nov%202020.pdf">Kacper Rekawek, Alexander Ritzmann, Hans-Jakob Schindler, Violent Right-Wing Extremism and Terrorism. Transnational Connectivity, Definitions, Incidents, Structures and Countermeasures, CEP commissioned by the Federal Foreign Office of Germany, November 2020</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/CEP%20Policy%20Paper_EU%20DSA_Sept%202020.pdf">Hany Farid, Alexander Ritzmann, Hans-Jakob Schindler, The EU Digital Services Act (DSA). Recommendations For An Effective Regulation Against Terrorist Content Online, CEP Policy Paper, September 2020</a></p>
+                                    <p><a href="https://euobserver.com/opinion/149276" target="_blank">Radek Sikorski, Lucinda Creighton, Hans-Jakob Schindler, Time for EU to get real on Hezbollah, EUObserver, 1 September 2020</a></p>
+                                    <p><a href="https://www.acamstoday.org/new-technologies-the-emerging-terrorist-financing-risk/" target="_blank">New Technologies: The Emerging Terrorist Financing Risk, ACAMS Today Europe, Vol. 2 No. 1, June 2020</a></p>
+                                    <p><a href="https://www.kas.de/en/single-title/-/content/on-the-threat-of-deep-fakes-to-democracy-and-society" target="_blank">Hany Farid, Hans-Jakob Schindler, Deep Fakes. On the Threat of Deep Fakes to Democracy and Society, CEP and KAS, May 2020</a></p>
+                                    <p><a href="https://www.ispsw.com/wp-content/uploads/2020/04/690_Schindler_DE.pdf">Terrorismusfinanzierung und soziale Medien, Institut für Strategie- Politik- Sicherheits- und Wirtschaftsberatung (ISPSW), April 2020</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/CEP%20Policy%20Paper_Terrorist%20Financing%20und%20Social%20Media_April%202020.pdf">Financing of Terrorism and Social Media Platforms, CEP Policy Paper, April 2020</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/CEP%20NetzDG%202.0%20Policy%20Paper%20April%202020%20ENG.pdf">Alexander Ritzmann, Marco Macori, Hans-Jakob Schindler, NetzDG 2.0. Recommendations for the amendment of the German Network Enforcement Act (NetzDG) and Investigation into the actual blocking and removal processes of YouTube, Facebook and Instagram, CEP Policy Paper, April 2020</a></p>
+                                    <p><a href="https://www.counterextremism.com/sites/default/files/CEP-Berlin%20Risk_Policy%20Paper%20EU%20Crypto%20Currency%20Final.pdf">Further Development of European Union Regulatory Framework for Cryptocurrencies Necessary to Mitigate Risks of Terrorism Financing, CEP Policy Paper, March 2020</a></p>
+                                    <p><a href="https://www.kas.de/en/web/auslandsinformationen/artikel/detail/-/content/democratising-deepfakes" target="_blank">Democratising Deepfakes. How Technological Development Can Influence Our Social Consensus, in: Konrad Adenauer Stiftung (ed), Digital Democracy. International Report, Issue 1, 30 March 2020</a></p>
+                                    <p><a href="https://www.routledge.com/Routledge-Handbook-of-Deradicalisation-and-Disengagement/Hansen-Lid/p/book/9781138229969" target="_blank">United Nations and counter-terrorism: strategy, structure and prevention of violent extremism conducive to terrorism: a practitioner’s view, in Stig Jarle Hansen, Stian Lid (eds.), Routledge Handbook of Deradicalisation and Disengagement, Routledge, March 2020</a></p>
+                                    <p><a href="https://www.gdforum.org/global-agenda-2" target="_blank">The Crime Terror Nexus, in: Global Diplomatic Forum (ed), The Global Agenda, Vol. 1, 2019-2020, 20 February 2020</a></p>
+                                    <p><a href="https://www.acamstoday.org/the-underappreciated-instrument-of-counterterrorism-sanctions/" target="_blank">The Underappreciated Instrument of Counterterrorism Sanctions, ACAMS Today, Issue: Vol. 18 No. 4, September 2019</a></p>
+                                    <p><a href="https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/abs/looting-and-smuggling-of-artifacts-as-a-strategy-to-finance-terrorism-global-sanctions-as-a-disruptive-and-preventive-tool/3485D8F8BF5EC709D85ECACBDA4E6972" target="_blank">Hans-Jakob Schindler, Frederique Gautier, Looting and Smuggling of Artifacts as a Strategy to Finance Terrorism Global Sanctions as a Disruptive and Preventive Tool, International Journal of Cultural Property, Volume 26, Issue 3 August 2019</a></p>
+                                    <p><a href="https://www.globalriskaffairs.com/2019/05/terrorism-and-the-tech-industry/" target="_blank">Terrorism and the Tech-industry, in: Berlin Risk (ed), Global Risk Affairs, May 2019</a></p>
+                                    <p><a href="https://www.acamstoday.org/emerging-sanctions-challenges-for-global-counter-terrorism/" target="_blank">Emerging Sanctions Challenges for Global Counter-Terrorism, ACAMS Today Europe, Vol. 1 No. 1, May 2019</a></p>
+                                    <p><a href="https://www.ourworld.co/terrorist-financing-must-be-next-frontier-for-european-legislators/" target="_blank">Terrorist Financing Must be Next Frontier for European Legislators, Our World, January 2019</a></p>
+                                    <p><a href="https://www.washingtoninstitute.org/media/1718?disposition=inline" target="_blank">The United Nation’s View on al-Qaeda’s Financing Today, in: Aaron Y. Zelin (ed.), How al-Qaeda Survived Drones, Uprisings, and the Islamic State. The Nature of the Current Threat, The Washington Institute for Near East Policy, June 2017</a></p>
+                                    </div>                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="profile toggleInformation">
+                                  <a><img src="./images/Gregory-Starr.jpg" alt=""></a>
+                                </div>
+                              </div>
+                              <div class="col-9 remove-left-padding">
+                                <a class="toggleInformation">
+                                  <div class="name">
+                                    <h4>
+                                      The Honorable Gregory B. Starr
+                                    </h4>
+                                  </div>
+                                  <div class="position">
+                                    <p>
+                                      CCSI Board of Directors
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="details mt-3" id="detailsInformation">
+                                  <div class="detailsInformation-des">
+                                    <p>Mr. Starr served as Assistant Secretary of State for Diplomatic Security at the U.S. Department of State, in Washington DC under the Obama administration, and as Principal Deputy Assistant Secretary under the George W. Bush administration. Ranked as Minister Counselor in the Senior Foreign Service, he was in charge if ensuring a safe and secure environment for the conduct of U.S. foreign policy throughout the world. Mr. Starr was also the United Nations Under Secretary General for Safety and Security, in charge of managing security for all global security operations of the UN. His service with the UN came at a critical juncture when the implementation of the Capital Master Plan required the renovation of UN Headquarters and the temporary dislocation of thousands of UN officials. Previously, he served in various senior management positions as a Special Agent for the US Department of State, including in Tel Aviv, Israel; Tunis, Tunisia; Dakar, Senegal; and Kinshasa, DRC.</p>                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="team" class="row mb-3 mb-sm-5 justify-content-md-center">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="profile toggleInformation">
+                                  <a><img src="./images/Cheryl-Stoute-sqr.jpg" alt=""></a>
+                                </div>
+                              </div>
+                              <div class="col-9 remove-left-padding">
+                                <a class="toggleInformation">
+                                  <div class="name">
+                                    <h4>
+                                      Cheryl B. Stoute
+                                    </h4>
+                                  </div>
+                                  <div class="position">
+                                    <p>
+                                      Independent Director
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="details mt-3" id="detailsInformation">
+                                  <div class="detailsInformation-des">
+                                    <p>Cheryl H. Stoute, a national of Trinidad and Tobago, was a Staff Member of the United Nations for thirty-eight years, until she retired in 2006.   In the last decade of her career, Ms. Stoute served as Chief of Office and Special Assistant of the Under-Secretary-General for Disarmament Affairs and subsequently as Chief of the Disarmament and Decolonization Affairs Branch in the Department for General Assembly and Conference Management.  During this period, Ms. Stoute was also assigned to the posts of Secretary of the United Nations Disarmament Commission, and from 2004 as Secretary of the First Committee (Disarmament and International Security Committee) of the UN General Assembly.  </p>
+                                    <p>During her career, Ms. Stoute has also served, inter alia, as:  Secretary of several international conferences – in Berlin, Beijing, Bangkok, Geneva, Graz, Lima, Nairobi, Paris, St. Vincent and the Grenadines, Stockholm, Vienna and Windhoek, as well as at UN Headquarters in New York – on Disarmament, Climate Change, Anti-Personnel Landmines, Peaceful Uses of Outer Space, Gender Mainstreaming in UN Peacekeeping Operations and Decolonization.  She was the Secretary and Coordinator of the United Nations/People’s Republic of China Joint Conference on “A Disarmament Agenda for the 21st Century,” held in Beijing in 2002. </p>
+                                    <p>Ms. Stoute has represented the United Nations at international meetings in Washington, D.C., The Hague, at the “Appeal for Peace” Conference (the largest international peace conference in history - organized by Civil Society); and the “Women’s Empowerment in the Context of Human Security” Workshop, held in Bangkok.  She served in Namibia for a year as the Deputy Head of an Electoral Centre and Deputy Director of a Regional Centre, during that country’s independence process in 1989/1990.</p>
+                                    <p>Over the years, she has been elected and/or nominated to the United Nations Staff Council, the Appointment and Promotion Committee, the Central Examination Board, the Specialized Board (Political) on External Examinations and the Staff/Management Joint Appeals Board, where she served as a Chairperson.  She was selected by the Under-Secretary-General to be the Department for Disarmament Affairs’ Focal Point on Gender Mainstreaming in the United Nations.  She initiated and coordinated the UN’s first Gender Mainstreaming Action Plan, which sought to identify ways and opportunities to simultaneously work for disarmament and gender equality. She was also the Department’s Liaison for both the Gender and the Disarmament NGO communities, as well as for its interaction with Civil Society.</p>
+                                    <p>Ms. Stoute was the President of the Group on Equal Rights for Women at the United Nations for three terms, the limit.  She served as Senior Adviser to subsequent Presidents and hosted, at the annual conferences on International Women’s Day, dignitaries such as US First Ladies Hillary Clinton and Laura Bush, President Mary Robinson of Ireland and Ms. Bella Abzug, with whom she co-chaired one of the Conferences.</p>
+                                    <p>Following her retirement, Ms. Stoute returned to the United Nations and served for several years as Secretary of the Joint Appeals Board. She also served as a Member of the Board of Trustees and, subsequently, as Chairperson of the Board, of the Urban Resource Institute, a New York-based, multi-million dollar non-profit Organization dealing with battered women. She currently sits on several Boards in Trinidad and Tobago. 
+                                    <br>
+                                    Ms. Stoute holds a BA and MA (Honors) in Economics.  </p>                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                      <div class="row mt-md-4">
+                        <div class="col">
+                          <div class="load-more">
+                            <a class="button" id="toggleMore" target="">View More</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="tab-2">
+                    <label for="tab2-2">Trainer</label>
+                    <input id="tab2-2" name="tabs-two" type="radio">
+                    <div>
+                      <h4>Trainer...</h4>
+                    </div>
+                  </div>
+                  <div class="tab-2">
+                    <label for="tab2-3">Collaborator</label>
+                    <input id="tab2-3" name="tabs-two" type="radio">
+                    <div>
+                      <h4>Collaborator...</h4>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+              </div>
+            </div>
+                
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="footer-description pt-sm-5 pb-sm-4">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 d-none d-sm-block">
+                  <div class="footer-logo">
+                    <img src="./images/main-logo.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-1 d-none d-md-block"></div>
+                <div class="col-sm-4 col-md-4">
+                  <div class="footer-links my-5 my-sm-0">
+                    <h3 class="title pb-md-3">
+                      Quick Links
+                    </h3>
+                    <ul>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        About us</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        News and Views</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        CCSI Africa</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        Training</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        Best Practices Guide</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        Gender Violence</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        Cyber Security</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        Maritime Security</a></li>
+                      <li><a href="#">
+                        <i class="fas fa-angle-double-right"></i></i>&nbsp; &nbsp;
+                        Research</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-5 col-md-4">
+                  <div class="contact-us">
+                    <h3 class="title pb-md-3">
+                      Contact Us
+                    </h3>
+                    <address>
+                      <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                        <a href="mailto: Rico.Carisch@comcapint.com">Enrico Carisch, Managing Director</a>
+                      <br>
+                      <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                        <a href="mailto: Loraine.rickard-martin@comcapint.com">Loraine Rickard-Martin, Chief Executive Officer</a>
+                      <br>
+                      <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                        <a href="mailto: info@ccsi.global">New York, NY</a>
+                      
+                    </address>
+                  </div>
+                  <div class="extra-inof pt-4">
+                    <p>
+                      CCSI is a non-profit 501 (c )(3) organization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function() {
+         
+            if ($(this).scrollTop() >= 500) { 
+              $("#background-img").attr("class", "bigSize");
+            }
+            else if($(this).scrollTop() < 500){
+              $("#background-img").attr("class", "smallSize");
+            }
+        });
+      });
+      </script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+
+    $('.hero__scroll').on('click', function(e) {
+      $('html, body').animate({
+        scrollTop: $(window).height()
+      }, 1200);
+    });
+  </script>
+
+<script>
+  $(document).ready(function(){
+    
+  $(".toggleInformation").click(function(){
+    $(this).closest("#team").find('#detailsInformation').slideToggle("slow");
+  });
+
+  $("#toggleMore").click(function(){
+    $(this).closest("#directors").find('#viewMore').slideToggle("slow");
+    $(this).text( $(this).text() == 'View More' ? "View Less" : "View More");
+  });
+});
+  </script>
+  </body>
+</html>
